@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS cheeses, desserts, sauces;
+DROP TABLE IF EXISTS cheeses, desserts, sauces, meals;
 
 CREATE TABLE cheeses (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -32,3 +32,14 @@ CREATE TABLE sauces (
 INSERT INTO sauces (name, category, link)
 VALUES
     ('Garlic Alfredo', 'Recipe', 'https://thevegan8.com/vegan-garlic-alfredo-sauce/');
+
+CREATE TABLE meals (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  category TEXT NOT NULL,
+  link TEXT NOT NULL
+);
+
+INSERT INTO meals (name, category, link)
+VALUES
+    ('Filipino Adobo', 'Recipe', 'https://sweetsimplevegan.com/2018/10/filipino-chicken-adobo/');
