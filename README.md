@@ -1,7 +1,3 @@
-# backend-template
+# Vegan Hand of Resources
 
-A starter template for Express projects at Alchemy Code Lab. We'll be using this in the "Backend / API" portion of the program.
-
-## Getting Started
-
-Click "Use this template" to create a new repo with your user as the owner. Then clone down the newly created repo and get hacking!
+An API for collecting vegan recipes and products falling into five categories: drinks, desserts, meals, sauces, and cheeses. Each has its own route.
